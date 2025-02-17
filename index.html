@@ -22,6 +22,10 @@
 </head>
 
 <body class="">
+
+  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <div class="w-16 h-16 border-4 border-t-blue-500 border-gray-300 rounded-full animate-spin"></div>
+  </div>
   <nav class="fixed top-0 left-0 z-50 bg-white w-full">
     <div class="nav flex justify-between items-center lg:p-2  lg:mx-2 ">
       <div class="logo flex gap-x-2 items-center justify-center">
@@ -407,6 +411,12 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('loader').style.display = 'none';
+    });
+  </script>
 
 </body>
 
